@@ -130,11 +130,7 @@ def DenseNet(input_shape=None, dense_blocks=3, dense_layers=-1, growth_rate=12, 
     print('#############################################')
           
     
-    """
-    y=Reshape((input_shape[0],input_shape[1]))(data_input)
-    y = LSTM(32)(y)
-    y = Dropout(0.2)(y)
-    """
+
     # Initial convolution layer
     x = Conv1D(nb_channels, (3,), padding='same',strides=(1,),use_bias=False, kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(data_input)
     #x = Conv1D(nb_channels, (3,), padding='same', kernel_initializer='he_uniform')(data_input)    
@@ -155,9 +151,6 @@ def DenseNet(input_shape=None, dense_blocks=3, dense_layers=-1, growth_rate=12, 
     x = Activation('relu')(x)
     
     
-    #x=Permute((3,1,2))(x)
-    #x=TimeDistributed(Flatten())(x)
-    #x = Permute((2, 1))(x)
     x = GlobalAveragePooling1D()(x)
 
     
