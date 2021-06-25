@@ -2,6 +2,8 @@
 This projects consists of a deep learning model for multivariate time series classification.
 The model is a hybrid architecture based on DenseNet and Attention LSTM.
 
+paper: https://ieeexplore.ieee.org/abstract/document/9219631
+
 # Dataset
 The datasets are downloaded from: https://github.com/titu1994/MLSTM-FCN/releases
 
