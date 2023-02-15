@@ -14,7 +14,7 @@ This project is inspired and would not have been possible without the work done 
 - https://github.com/seasonyc/densenet/blob/master/densenet.py
 - https://github.com/hfawaz/dl-4-tsc
 
-# Citation:
+## Citation
 @inproceedings{azar2020using,
   title={Using DenseNet for IoT multivariate time series classification},
   author={Azar, Joseph and Makhoul, Abdallah and Couturier, Rapha{\"e}l},
