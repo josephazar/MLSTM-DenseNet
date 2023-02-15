@@ -3,6 +3,7 @@ This projects consists of a deep learning model for multivariate time series cla
 The model is a hybrid architecture based on DenseNet and Attention LSTM.
 
 paper: Using DenseNet for IoT multivariate time series classification
+
 link: https://ieeexplore.ieee.org/abstract/document/9219631
 
 # Dataset
